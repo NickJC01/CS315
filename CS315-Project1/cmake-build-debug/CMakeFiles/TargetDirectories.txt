@@ -1,3 +1,3 @@
-C:/Users/nchau/CLionProjects/CS315-Project1/cmake-build-debug/CMakeFiles/CS315_Project1.dir
-C:/Users/nchau/CLionProjects/CS315-Project1/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/nchau/CLionProjects/CS315-Project1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/nchaudoir/CLionProjects/CS315-Project1/cmake-build-debug/CMakeFiles/untitled.dir
+/home/nchaudoir/CLionProjects/CS315-Project1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/nchaudoir/CLionProjects/CS315-Project1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

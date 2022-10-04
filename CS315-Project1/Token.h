@@ -1,6 +1,6 @@
 //
 // Created by nchau on 9/27/2022.
-//
+// This file defines my token class; the necessary functions for manipulating tokens as well as the type definitions.
 
 #ifndef CS315_PROJECT1_TOKEN_H
 #define CS315_PROJECT1_TOKEN_H
@@ -34,7 +34,7 @@ public: Token();
     bool getIsComma();
     void setString(string);
     string getString();
-    struct TOKEN;
+
 
 };
 

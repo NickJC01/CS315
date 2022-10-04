@@ -1,26 +1,29 @@
 #include <iostream>
-#include "tokenizer.h"
-#include "token.h"
+#include "Tokenizer.h"
+#include "Token.h"
+#include <fstream>
+#include <iostream>
 
-string Token::getToken(char c)  //when reading c, form tokens.
-{
-    switch (c) {
-        case '(': case ')': case '{': case '}': case ';': case ',':
-            return TOKEN(c);
+using namespace std;
+
+
+Tokenizer::Tokenizer(std::string filename) {
+    char ch;
+
+    fstream fin(filename, fstream::in);
+    while (fin >> noskipws >> ch) {
+        GetToken(ch);
     }
 }
-/*
-string Token::getToken(char c)  //when reading c, form tokens.
-    case '(':
-        setOpenBrace(c);
-    case ')':
-        setCloseBrace(c);
-    case '{':
-        setOpenBracket(c);
-    case '}':
-        setCloseBracket(c);
-    case ';':
-        setIsColon(c);
-    case ',':
-        setIsComma(c);
-    */
+
+void Tokenizer::readfile(vector<Token> &) {
+
+}
+
+Token Tokenizer::GetToken(char &) {
+    return Token();
+}
+
+void Tokenizer::WhiteSpace(char &) {
+
+}

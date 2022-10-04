@@ -1,3 +1,5 @@
+
+
 //
 // Created by nchau on 9/27/2022.
 //
@@ -7,13 +9,6 @@
 Token::Token() {
 
 }
-
-struct TOKEN
-{
-    std::string value;
-    Token type;
-    std::string toString();
-};
 
 void Token::setOpenBracket(bool x) {
     open_Bracket = x;
@@ -70,4 +65,6 @@ void Token::setString(string x) {
 string Token::getString() {
     return name;
 }
+
+
 
