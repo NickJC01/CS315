@@ -1,5 +1,3 @@
-
-
 //
 // Created by nchau on 9/27/2022.
 //
@@ -64,6 +62,23 @@ void Token::setString(string x) {
 
 string Token::getString() {
     return name;
+}
+
+void Token::print() {
+    if (open_Bracket == true)
+        cout << '[' << endl;
+    if (close_Bracket == true)
+        cout << ']' << endl;
+    if (open_Brace == true)
+        cout << '{' << endl;
+    if (close_Brace == true)
+        cout << '}' << endl;
+    if (is_colon == true)
+        cout << ':' << endl;
+    if (is_comma == true)
+        cout << ',' << endl;
+    if (!name.empty())
+        cout << name << endl;
 }
 
 

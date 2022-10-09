@@ -67,8 +67,26 @@ build CMakeFiles/untitled.dir/Tokenizer.cpp.o: CXX_COMPILER__untitled_Debug /hom
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir
 
-build CMakeFiles/untitled.dir/user.cpp.o: CXX_COMPILER__untitled_Debug /home/nchaudoir/CLionProjects/CS315-Project1/user.cpp || cmake_object_order_depends_target_untitled
-  DEP_FILE = CMakeFiles/untitled.dir/user.cpp.o.d
+build CMakeFiles/untitled.dir/SocialNetwork.cpp.o: CXX_COMPILER__untitled_Debug /home/nchaudoir/CLionProjects/CS315-Project1/SocialNetwork.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/SocialNetwork.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir
+
+build CMakeFiles/untitled.dir/Sets.cpp.o: CXX_COMPILER__untitled_Debug /home/nchaudoir/CLionProjects/CS315-Project1/Sets.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/Sets.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir
+
+build CMakeFiles/untitled.dir/Pair.cpp.o: CXX_COMPILER__untitled_Debug /home/nchaudoir/CLionProjects/CS315-Project1/Pair.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/Pair.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir
+
+build CMakeFiles/untitled.dir/Instance.cpp.o: CXX_COMPILER__untitled_Debug /home/nchaudoir/CLionProjects/CS315-Project1/Instance.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/Instance.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir
@@ -81,7 +99,7 @@ build CMakeFiles/untitled.dir/user.cpp.o: CXX_COMPILER__untitled_Debug /home/nch
 #############################################
 # Link the executable untitled
 
-build untitled: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/main.cpp.o CMakeFiles/untitled.dir/Token.cpp.o CMakeFiles/untitled.dir/Tokenizer.cpp.o CMakeFiles/untitled.dir/user.cpp.o
+build untitled: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/main.cpp.o CMakeFiles/untitled.dir/Token.cpp.o CMakeFiles/untitled.dir/Tokenizer.cpp.o CMakeFiles/untitled.dir/SocialNetwork.cpp.o CMakeFiles/untitled.dir/Sets.cpp.o CMakeFiles/untitled.dir/Pair.cpp.o CMakeFiles/untitled.dir/Instance.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/untitled.dir
   POST_BUILD = :

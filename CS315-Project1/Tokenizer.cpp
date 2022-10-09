@@ -6,24 +6,56 @@
 
 using namespace std;
 
+Tokenizer::Tokenizer(string filename) {
+    input.open(filename);
+}
 
-Tokenizer::Tokenizer(std::string filename) {
-    char ch;
+    void Tokenizer::readfile(vector<Token> &TokenVector) {
+        char ch;
+        char r;
+        while (input >> noskipws >> ch) {
+            Token x = GetToken(ch);
+            TokenVector.push_back(x);
 
-    fstream fin(filename, fstream::in);
-    while (fin >> noskipws >> ch) {
-        GetToken(ch);
+            x = GetToken(r);
+        }
+
     }
-}
 
-void Tokenizer::readfile(vector<Token> &) {
+    Token Tokenizer::GetToken(char &ch) {
+        Token x;
+        switch (ch) {
+            default:
+                break;
+            case '[':
+                x.setOpenBracket(true);
+                return x;
+            case ']':
+                x.setCloseBracket(true);
+                return x;
+            case '{':
+                x.setOpenBrace(true);
+                return x;
+            case '}':
+                x.setCloseBrace(true);
+                return x;
+            case ':':
+                x.setIsColon(true);
+                return x;
+            case ',':
+                x.setIsComma(true);
+                return x;
+            case '"':
+                string name;
+                input >> ch;
+                while (ch != '"') {
+                    name += ch;
+                    input >> ch;
+                }
+                if (name == "users")
+                    break;
+                x.setString(name);
+                return x;
 
-}
-
-Token Tokenizer::GetToken(char &) {
-    return Token();
-}
-
-void Tokenizer::WhiteSpace(char &) {
-
-}
+        }
+    }

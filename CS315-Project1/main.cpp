@@ -2,32 +2,17 @@
 #include <fstream>
 #include <vector>
 #include "Token.h"
+#include "Tokenizer.h"
+#include "Pair.h"
+
 using namespace std;
 
-int main()
+int main(int argc, char* argv[])
 {
-    string filename("input.json");
-    vector<char> bytes;
-    char byte = 0;
+    vector<Token> TVector;
+    Tokenizer tokenizer("input.json");
+    tokenizer.readfile(TVector);
 
-    ifstream input_file(filename);
-    if (!input_file.is_open()) {
-        cerr << "Could not open the file - '"
-             << filename << "'" << endl;
-        return EXIT_FAILURE;
-    }
-
-    while (input_file.get(byte)) {
-        bytes.push_back(byte);
-    }
-    for (const auto &i : bytes) {
-        cout << i << "-";
-    }
-    cout << endl;
-    input_file.close();
-
-    Token token;
-    token.setCloseBracket(true);
 
     return EXIT_SUCCESS;
 }
