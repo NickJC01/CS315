@@ -10,7 +10,7 @@
 class Instance {
 public:
     Instance();
-    void addPair(Pair); // This function adds a par to the vector of pairs (instance) that I generated
+    void addPair(Pair); // This function adds a pair to the vector of pairs (instance) that I generated
     std::string getIDStr(); // This function returns the IDStr property of an instance
     std::string getName(); // This function returns the Name property of an instance
     std::string getLocation(); // This function returns the Location property of an instance

@@ -16,7 +16,6 @@ Tokenizer::Tokenizer(string filename) {
         while (input >> noskipws >> ch) {
             Token x = GetToken(ch);
             TokenVector.push_back(x);
-
             x = GetToken(r);
         }
 
